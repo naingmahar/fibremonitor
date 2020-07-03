@@ -68,7 +68,7 @@ root.y0 = 0;
 root.children.forEach(collapse);
 
 window.addEventListener("click",(e)=>{
-    hideTooltip()
+    // hideTooltip()
     // alert(e.target)
     if(e.target = "g") {
         hideTooltip()
@@ -241,7 +241,7 @@ function update(source = root) {
 
   // Toggle children on click.
   function click(d) {
-    console.log("data",d.data)
+    // console.log("data",d.data)
     showTooltip({pageX:d.y,pageY:d.x}, d.data.attribute);
     if (d.children) {
         d._children = d.children;
